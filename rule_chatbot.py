@@ -1,13 +1,12 @@
 def start_chatbot():
-    # 1. KNOWLEDGE BASE (Intent Architecture)
-    # A. Responses: Yahan hum sirf bot ke final jawabaat rakhenge, har jawab ka ek ID (intent) hoga.
+    # 1. KNOWLEDGE BASE
     responses = {
         "greeting": "Hello! I am your AI assistant. How can I help you?",
         "pricing": "Our basic plan starts at $10/month.",
         "status": "I am functioning perfectly, thank you!"
     }
-    
-    # B. Intent Map: Yahan hum user ke mukhtalif words ko ek hi Intent ke sath link karenge.
+
+    # B. Intent Map
     intent_map = {
         "hello": "greeting",
         "hi": "greeting",
@@ -27,7 +26,7 @@ def start_chatbot():
     while True:
         raw_input = input("You: ")
         
-        # 3. SANITIZATION (Data Clean Karna)
+        # 3. SANITIZATION 
         clean_input = raw_input.lower().strip().replace("?", "")
         
         # 4. EXIT STRATEGY
@@ -35,11 +34,9 @@ def start_chatbot():
             print("Bot: Goodbye! Have a great day.")
             break
         
-        # 5. LOOKUP & FALLBACK (Two-Step Verification)
-        # Step A: User ke word se Intent dhoondo
+        # 5. LOOKUP & FALLBACK    
         detected_intent = intent_map.get(clean_input)
         
-        # Step B: Us Intent ka actual response dhoondo. Agar intent na mile, to fallback do.
         bot_response = responses.get(detected_intent, fallback_message)
         
         # 6. OUTPUT
