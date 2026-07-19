@@ -1,18 +1,25 @@
-# Rule-Based AI Chatbot
+# 🏦 Credit Risk Assessment Engine
 
-A deterministic, rule-based chatbot built in Python utilizing an Intent-based Architecture. This project serves as the foundational deterministic layer before integrating Generative AI (LLMs).
+An end-to-end Machine Learning solution built to predict the probability of a loan applicant defaulting, based on their historical financial data. This project was developed as part of my Artificial Intelligence journey to bridge the gap between raw data science and a deployable product.
 
-## Core Concepts Implemented
-* **IPO Pipeline:** Continuous Input, Process, and Output loop.
-* **Input Sanitization:** Normalizing user text (lowercasing, whitespace stripping, punctuation removal) for accurate matching.
-* **Intent Architecture:** Using dictionaries (Hash Maps) to map multiple user inputs to a single intent, avoiding inefficient conditional ladders.
-* **Graceful Fallback:** Handling unmatched queries without crashing the system.
+## 🚀 Live Application
+**Try the interactive web app here:** [Yahan Apna Streamlit Wala Link Paste Karna]
 
-## How to Run
-1. Clone the repository.
-2. Open terminal and run: `python rule_chatbot.py`
-3. Type your query. Type 'exit' to quit the application.
+## 🧠 The Machine Learning Pipeline
+* **Data Processing:** Handled missing values, performed exploratory data analysis (EDA), and encoded categorical variables.
+* **Class Imbalance:** Applied techniques to manage imbalanced banking datasets, focusing heavily on identifying high-risk defaults.
+* **Modeling:** Trained a robust **Random Forest Classifier**.
+* **Deployment:** Transitioned the backend model into a user-friendly frontend using **Streamlit**.
 
-## Tech Stack
-* Python 3
-* Git & GitHub for Version Control
+## 📊 Model Performance Metrics
+* **Accuracy:** 92.11%
+* **Precision:** 87.90%
+* **Recall:** 74.05%
+* **F1 Score:** 80.38%
+* **ROC AUC:** 85.60%
+
+## 🛠️ Tech Stack
+* **Python**
+* **Scikit-Learn** & **Pandas** (Data Modeling & Manipulation)
+* **Streamlit** (Frontend Deployment)
+* **Joblib** (Model Serialization)
