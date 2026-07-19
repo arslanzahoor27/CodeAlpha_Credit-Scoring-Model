@@ -1,9 +1,6 @@
-# 🏦 Credit Risk Assessment Engine
+# 🏦 Credit Scoring Model
 
 An end-to-end Machine Learning solution built to predict the probability of a loan applicant defaulting, based on their historical financial data. This project was developed as part of my Artificial Intelligence journey to bridge the gap between raw data science and a deployable product.
-
-## 🚀 Live Application
-**Try the interactive web app here:** [Yahan Apna Streamlit Wala Link Paste Karna]
 
 ## 🧠 The Machine Learning Pipeline
 * **Data Processing:** Handled missing values, performed exploratory data analysis (EDA), and encoded categorical variables.
